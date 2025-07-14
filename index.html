@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+    <section>
+    <div class="mae">
+        <h1>Conta</h1>
+        <form onsubmit="enviar(event);"> 
+        <div>
+           NOME: <input id="nome" type="text" required placeholder="Digite seu nome:"  >
+        </div>
+        <div>
+        SOBRENOME: <input id="sob" type="text" required placeholder="Digite seu sobrenome:">
+        </div>
+        <div>
+            EMAIL: <input id="email" type="email" required placeholder="Digite seu email:">
+        </div>
+        <div>
+            CONTATO: <input id="cnt" type="tel" required placeholder="Digite seu contato:">
+        </div>
+
+        <button type="submit">ENVIAR</button>
+        
+        
+    </section>
+    <div id="resul" class="re"></div>
+    </div>
+</form>
+    <button class="bt" id="apg" style="display:none;" onclick="apg()">apagar</button>
+    <script src="script.js"></script>
+</body>
